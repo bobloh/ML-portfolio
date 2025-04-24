@@ -1,0 +1,13 @@
+# Text files (e.g., Python, Markdown) should use LF in the repo
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+# Jupyter Notebooks should use LF (JSON-based, text)
+*.ipynb text eol=lf
+
+# Binary files (e.g., images, datasets) are not touched
+*.png binary
+*.jpg binary
+*.csv binary
+
