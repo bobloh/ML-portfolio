@@ -54,7 +54,7 @@ Below are example outputs from the project, demonstrating its clarity and profes
    *Compares actual vs. predicted BRK prices, highlighting model accuracy.*
 
 2. **Feature Importance**:  
-   ![Feature Importance Plot](https://via.placeholder.com/400x200.png?text=Feature+Importance+Plot)  
+   ![Feature Importance Plot](images/feature_importance_plot.png)  
    *Shows key drivers like cash ratio and S&P 500 levels, aiding client understanding.*
 
 ---
