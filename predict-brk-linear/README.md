@@ -50,7 +50,7 @@ Ideal for financial advisors, hedge funds, or retail investors, this project dem
 Below are example outputs from the project, demonstrating its clarity and professionalism:
 
 1. **Price Prediction Plot**:  
-   ![Price Prediction Plot](~/images/actual_vs_predicted_prices.png)  
+   ![Price Prediction Plot](images/actual_vs_predicted_prices.png)  
    *Compares actual vs. predicted BRK prices, highlighting model accuracy.*
 
 2. **Feature Importance**:  
