@@ -99,24 +99,10 @@ cd brk-options-prediction
 
 pip install -r requirements.txt
 
-## Lessons Learned and Model Refinement
-In the initial phase of this project, we relied on R-Squared (R²) and Mean Absolute Error (MAE) to evaluate our Ridge regression model for predicting BRK stock prices. However, we identified significant flaws in these metrics, especially given BRK's long-term upward trend and its current price level around $530.
-### R-Squared (R²): While R² values were high (e.g., 0.96 for 3-month predictions), they were misleading. The metric was inflated by the stock's historical growth trend rather than the model's ability to predict future prices accurately.
-
-### Mean Absolute Error (MAE): MAE values (e.g., $16.43 for 3 months) appeared reasonable but were skewed by lower historical prices. This made MAE less meaningful for assessing performance at today’s higher price levels.
-
-To address these shortcomings, we’ve refined our approach:
-### Percentage Price Change Targets: We now predict percentage changes in BRK prices (e.g., 'Pct_Change_3M', 'Pct_Change_6M', etc.) instead of absolute prices. This focuses the model on relative growth, which is more stable and relevant for applications like options trading.
-
-### Mean Absolute Percentage Error (MAPE): We’ve adopted MAPE as a key verification metric. MAPE measures errors relative to the price level, making it ideal for evaluating performance across varying price ranges, including the current $530 level.
-
-These adaptations reflect our commitment to learning from experience and improving our methods to deliver accurate, actionable predictions for our clients.
 
 
-    
 
-
-- **View the Code**: [Jupyter Notebook](brk_options_prediction.ipynb)  
+- **View the Code**: [Jupyter Lab](ModelsForBRK_LinearRegression.ipynb)  
 - **Contact Me**: [Email](mailto:shiouloh@gmail.com) | [LinkedIn](https://www.linkedin.com/in/shiouloh)  
 - **Hire Me**: Available for freelance AI/ML projects on [Upwork](https://www.upwork.com/freelancers/~yourprofile) or direct contracts.
 
