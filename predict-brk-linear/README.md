@@ -1,13 +1,13 @@
 # BRK Options Prediction with Linear Regression
 
-![Project Banner](https://via.placeholder.com/800x200.png?text=BRK+Options+Prediction+ML+Project)  
+![Project Banner](images/ml-stock-price.jpg)  
 *Predict Berkshire Hathaway stock prices to identify undervalued call options, using linear regression and insightful visualizations.*
 
 ---
 
 ## Overview
 
-This project leverages **linear regression** to predict **Berkshire Hathaway (BRK)** stock prices at 3, 6, 12, and 18 months, enabling the identification of undervalued call options for profitable trading strategies. Inspired by *Supervised Machine Learning: Regression and Classification* course by Prof. Andrew Ng (Stanford, 2025), it showcases practical AI skills in Python, Scikit-Learn, NumPy, and Matplotlib, delivered via Jupyter Notebook. Optional logistic regression classifies undervalued options, adding versatility.
+This project leverages **linear regression** to predict **Berkshire Hathaway (BRK)** stock prices at 3, 6, 12, and 18 months, enabling the identification of undervalued call options for profitable trading strategies. Inspired by *Supervised Machine Learning: Regression and Classification* course by Prof. Andrew Ng (Stanford, 2025), it showcases practical AI skills in Python, Scikit-Learn, statsmodel, NumPy, and Matplotlib, delivered via Jupyter Lab. Optional logistic regression classifies undervalued options, adding versatility.
 
 Ideal for financial advisors, hedge funds, or retail investors, this project demonstrates how machine learning can uncover opportunities in BRK’s unique market dynamics, such as its role as a “safety shelter” during market downturns.
 
@@ -31,7 +31,7 @@ Ideal for financial advisors, hedge funds, or retail investors, this project dem
 - **Scikit-Learn**: For linear regression, logistic regression (optional), and anomaly detection.
 - **NumPy**: For numerical computations and data preprocessing.
 - **Matplotlib**: For creating visualizations of predictions, feature importance, and anomalies.
-- **Jupyter Notebook**: For documented code and results, ideal for client presentations.
+- **Jupyter Lab**: For documented code and results, ideal for client presentations.
 - **yfinance**: For sourcing BRK and market data.
 
 ---
