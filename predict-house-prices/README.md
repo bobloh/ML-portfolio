@@ -1,6 +1,6 @@
 # House Price Prediction with Linear Regression and Gradient Descent
 
-![Project Banner](./images/house.jpg)  
+<img src="./images/house.jpg" alt="Portfolio Banner" height="192">
 *Predict house prices using machine learning with insightful visualizations of gradient descent and cost function optimization.*
 
 ---
