@@ -1,6 +1,6 @@
 # AI & Machine Learning Portfolio
 
-![Portfolio Banner](https://via.placeholder.com/800x200.png?text=Bob+Loh+AI+Portfolio)
+<img src="ml-image.jpg" alt="Portfolio Banner" height="192">
 
 Welcome to my AI and Machine Learning portfolio! I'm Bob Loh, a Stanford-certified machine learning freelancer with over 25 years of software engineering experience, now specializing in AI solutions. Recently completed *Supervised Machine Learning: Regression and Classification* (Stanford, 2025, Prof. Andrew Ng), I deliver practical ML models using Python, Scikit-Learn, NumPy, Matplotlib, and Jupyter Notebook.
 
