@@ -1,6 +1,6 @@
 # House Price Prediction with Linear Regression and Gradient Descent
 
-![Project Banner](https://via.placeholder.com/800x200.png?text=House+Price+Prediction+ML+Project)  
+![Project Banner](./images/house.jpg)  
 *Predict house prices using machine learning with insightful visualizations of gradient descent and cost function optimization.*
 
 ---
@@ -48,11 +48,11 @@ Whether you're a real estate business aiming to estimate property values or a co
 Below are example outputs from the project, demonstrating its clarity and professionalism:
 
 1. **Cost Function Plot**:  
-   ![Cost Function Plot](https://via.placeholder.com/400x200.png?text=Cost+Function+Plot)  
+   ![Cost Function Plot](./images/cost-function.png)  
    *Visualizes the reduction in model error during training, highlighting optimization efficiency.*
 
 2. **Gradient Descent Steps**:  
-   ![Gradient Descent Plot](https://via.placeholder.com/400x200.png?text=Gradient+Descent+Steps)  
+   ![Gradient Descent Plot](./images/contour2.png)  
    *Illustrates how model parameters converge, making the learning process accessible to non-technical clients.*
 
 ---
@@ -64,6 +64,11 @@ Below are example outputs from the project, demonstrating its clarity and profes
 3. **Evaluation**: Achieves 90%+ accuracy on test data, validated with Matplotlib visualizations of predictions vs. actual prices.
 4. **Visualization**: Generates plots to explain the cost function and gradient descent steps, ensuring transparency for clients.
 
+---
+
+## More Advanced Project
+
+You may be intrested in [a more advanced project](../predict-brk-linear/README.md) on stock prices prediction.
 ---
 
 ## Why Work With Me?
