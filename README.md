@@ -19,17 +19,20 @@ This portfolio showcases three hands-on ML projects, demonstrating my ability to
 
 ## Projects
 
+
 1. **[House Price Prediction with Linear Regression](./house-price-prediction/)**  
    Predicts house prices using linear regression and gradient descent, with instructive Matplotlib visualizations of cost function and optimization steps. Ideal for real estate businesses seeking data-driven pricing.  
    *Technologies*: Python, Scikit-Learn, NumPy, Matplotlib, Jupyter Notebook
 
-2. **[Project 2: Logistic Regression (Placeholder)](./project-2/)**  
-   (Brief description, e.g., "Classifies customer churn for subscription businesses using logistic regression, with visualizations of model performance.")  
-   *Technologies*: Python, Scikit-Learn, NumPy, Matplotlib, Jupyter Notebook
-
-3. **[Project 3: TBD (Placeholder)](./project-3/)**  
+2. **[BRK Stock Price Prediction Using Machine Learning](./predict-brk-linear/)**  
    (Brief description, e.g., "Predicts sales trends using regression, tailored for retail analytics.")  
-   *Technologies*: Python, Scikit-Learn, NumPy, Matplotlib, Jupyter Notebook
+   *Technologies*: Python, Scikit-Learn, NumPy, Matplotlib, Statsmodel, Seaborn, and Jupyter Lab
+<!--
+3. **[Project 2: Logistic Regression (Placeholder)](./project-2/)**  
+   (Brief description, e.g., "Classifies customer churn for subscription businesses using logistic regression, with visualizations of model performance.")  
+   *Technologies*: Python, Scikit-Learn, NumPy, Matplotlib, Jupyter Lab
+-->
+
 
 ---
 
