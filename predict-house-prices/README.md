@@ -69,6 +69,7 @@ Below are example outputs from the project, demonstrating its clarity and profes
 ## More Advanced Project
 
 You may be intrested in [a more advanced project](../predict-brk-linear/README.md) on stock prices prediction.
+
 ---
 
 ## Why Work With Me?
