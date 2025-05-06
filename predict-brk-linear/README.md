@@ -1,89 +1,104 @@
-# BRK Options Prediction with Linear Regression
+# BRK Price Prediction Using Machine Learning
 
-![Project Banner](images/ml-stock-price.jpg)  
-*Predict Berkshire Hathaway stock prices to identify undervalued call options, using linear regression and insightful visualizations.*
+<!-- ![Project Banner](images/ml-stock-price.jpg)-->
+<img src="images/ml-stock-price.jpg" alt="Project Banner" height="192">
+
+
+*Predict Berkshire Hathaway stock prices and returns to uncover undervalued call options, using advanced linear regression techniques and insightful visualizations.*
 
 ---
 
 ## Overview
 
-This project leverages **linear regression** to predict **Berkshire Hathaway (BRK)** stock prices at 3, 6, 12, and 18 months, enabling the identification of undervalued call options for profitable trading strategies. Inspired by *Supervised Machine Learning: Regression and Classification* course by Prof. Andrew Ng (Stanford, 2025), it showcases practical AI skills in Python, Scikit-Learn, statsmodel, NumPy, and Matplotlib, delivered via Jupyter Lab. Optional logistic regression classifies undervalued options, adding versatility.
+This project harnesses **linear regression** and **Ridge regularization** to predict **Berkshire Hathaway (BRK)** stock prices and percent price changes at 3, 6, 9, 12, and 18-month horizons, enabling data-driven identification of undervalued call options for profitable trading strategies. Built on the *Supervised Machine Learning: Regression and Classification* course by Prof. Andrew Ng (Stanford, 2025), it showcases advanced AI skills in Python, Scikit-Learn, NumPy, Matplotlib, and Jupyter Lab.
 
-Ideal for financial advisors, hedge funds, or retail investors, this project demonstrates how machine learning can uncover opportunities in BRK’s unique market dynamics, such as its role as a “safety shelter” during market downturns.
+Designed for financial advisors, hedge funds, and retail investors, the project delivers actionable insights into BRK’s unique market dynamics, such as its role as a “market buffer” during downturns. Rigorous analysis of model performance, feature stability, and non-linear effects demonstrates technical expertise and a client-focused approach to solving complex financial problems.
 
 ---
 
 ## Key Features
 
-- **Accurate Price Predictions**: Linear regression models predict BRK stock prices with up to 65% accuracy (R² ≈ 0.65), using features like cash ratio, P/E ratio, and S&P 500 levels.
-- **Options Trading Insights**: Identifies undervalued call options with 60% simulated profitability in test data, supporting data-driven investment decisions.
+- **Robust Price and Return Predictions**: Linear regression and Ridge models predict BRK stock prices (R² up to 0.97 for absolute prices) and percent price changes (R² up to 0.57 out-of-sample), using features like cash-to-assets ratio, P/E ratio, price-to-book, and S&P 500 performance gaps.
+- **Options Trading Insights**: Identifies undervalued call options by modeling BRK’s price movements and returns, tailored for strategic investment decisions.
+- **Advanced Analysis**:
+  - **Coefficient Stability**: Detailed evaluation of feature impacts (e.g., unstable `Pe-ratio`, stable `Price-book`), ensuring reliable predictions.
+  - **Ridge Regularization**: Improves out-of-sample performance (e.g., R² from -0.02 to 0.06 for 6M percent changes) by mitigating overfitting.
+  - **Non-Linear Exploration**: Proposes polynomial feature engineering to capture complex market buffer effects, planned as a future extension.
 - **Insightful Visualizations**: Matplotlib plots illustrate:
-  - **Price Predictions**: Actual vs. predicted BRK prices over time.
-  - **Feature Importance**: Key drivers like cash ratio and market exuberance.
-- **Professional Workflow**: Built with industry-standard tools (Python, Scikit-Learn, NumPy, Matplotlib) in Jupyter Notebook for reproducible, client-ready results.
-- **Scalable Approach**: Adaptable to other financial predictions (e.g., ETF pricing, portfolio optimization).
+  - Actual vs. predicted prices and returns.
+  - Feature importance, highlighting drivers like cash reserves and market trends.
+  - Error distributions for transparent model evaluation.
+- **Professional Workflow**: Built with industry-standard tools (Python, Scikit-Learn, Jupyter Lab) for reproducible, client-ready deliverables, with table-of-contents navigation for ease of use.
+- **Scalable Framework**: Adaptable for ETF pricing, portfolio optimization, or other financial predictions.
 
 ---
 
 ## Technologies Used
 
-- **Python**: Core programming language for model development.
-- **Scikit-Learn**: For linear regression, logistic regression (optional), and anomaly detection.
+- **Python**: Core language for model development and analysis.
+- **Scikit-Learn**: For linear regression, Ridge regularization, and polynomial feature engineering.
 - **NumPy**: For numerical computations and data preprocessing.
-- **Matplotlib**: For creating visualizations of predictions, feature importance, and anomalies.
-- **Jupyter Lab**: For documented code and results, ideal for client presentations.
-- **yfinance**: For sourcing BRK and market data.
+- **Pandas**: For efficient data handling and feature engineering.
+- **Matplotlib**: For creating visualizations of predictions, feature importance, and error analysis.
+- **Jupyter Lab**: For documented, interactive code and results, ideal for client presentations.
+- **yfinance**: For sourcing BRK and market data (e.g., S&P 500, VIX).
 
 ---
 
 ## Project Highlights
 
-- **Business Value**: Enables financial clients to identify undervalued BRK call options, leveraging BRK’s unique market behavior (e.g., inverse movements vs. S&P 500).
-- **Technical Rigor**: Linear regression showcases robust ML practices.
-- **Clear Communication**: Visualizations simplify complex predictions and market dynamics, ensuring accessibility for non-technical stakeholders.
-- **Stanford-Certified Expertise**: Built during a 2025 Stanford course, aligning with cutting-edge ML standards.
+- **Business Value**: Empowers clients to capitalize on BRK’s unique behavior (e.g., stability in down markets) for options trading and portfolio management, with predictions achieving MAE as low as 5.85% for 6M returns.
+- **Technical Excellence**: Demonstrates mastery of linear regression, regularization, and feature engineering, with in-depth analysis of model performance and coefficient stability.
+- **Actionable Insights**: Clear visualizations and rigorous evaluations simplify complex predictions, making results accessible to non-technical stakeholders.
+- **Stanford-Certified Expertise**: Grounded in Stanford’s 2025 ML course, ensuring alignment with cutting-edge standards.
 
 ---
 
 ## Sample Visualizations
 
-Below are example outputs from the project, demonstrating its clarity and professionalism:
-
 1. **Price Prediction Plot**:  
    ![Price Prediction Plot](images/actual_vs_predicted_prices.png)  
-   *Compares actual vs. predicted BRK prices, highlighting model accuracy.*
+   *Compares actual vs. predicted BRK prices, showcasing model accuracy.*
 
 2. **Feature Importance**:  
    ![Feature Importance Plot](images/feature_importance_plot.png)  
-   *Shows key drivers like cash ratio and S&P 500 levels, aiding client understanding.*
+   *Highlights key drivers like cash-to-assets ratio and S&P 500 performance.*
+
+3. **Error Distribution**:  
+   ![Error Distribution Plot](images/error_distribution.png)  
+   *Visualizes prediction errors to validate model reliability.*
 
 ---
 
 ## How It Works
 
-1. **Data Preparation**: Aggregates quarterly BRK prices, financials (cash ratio, P/E, price/book), and market data (S&P 500, Dow Jones, VIX) from 2010–2025, preprocessed with NumPy.
-2. **Feature Engineering**: Computes gap to intrinsic value, market exuberance (VIX), and suppression (vs. 14% historical return) for predictive power.
-3. **Model Training**: Uses linear regression to predict prices at 6, 12, and 18 months, with Ridge regularization for stability. Optional logistic regression classifies undervalued options.
-4. **Evaluation**: Achieves R² ≈ 0.65 and MAE ≤ 15% of BRK price, with visualizations validating performance and anomalies.
+1. **Data Preparation**: Aggregates quarterly BRK prices, financials (cash-to-assets, P/E, price/book), and market data (S&P 500) from 2010–2025, preprocessed with Pandas and NumPy.
+2. **Feature Engineering**: Includes cash-to-assets ratio, P/E ratio, price-to-book, S&P 500 performance gaps, and lagged price changes, with planned polynomial terms to capture non-linear effects.
+3. **Model Training**:
+   - **Linear Regression**: Predicts absolute prices (R² up to 0.97) and percent changes (R² up to 0.66 in-sample).
+   - **Ridge Regularization**: Enhances out-of-sample performance (e.g., R² 0.42 for 9M), with tuned alpha values.
+   - **Train-Test Split**: Validates generalization on unseen data.
+4. **Evaluation and Analysis**:
+   - Achieves MAE ≤ 6.44% for 9M returns and R² up to 0.57 for 18M out-of-sample.
+   - Analyzes coefficient stability (e.g., unstable `Pe-ratio`, stable `Price-book`) and proposes polynomial features for non-linear effects.
+   - Visualizes actual vs. predicted values, feature importance, and error distributions.
+5. **Future Extension**: Plans to implement polynomial feature engineering to model non-linear market buffer effects, enhancing prediction accuracy.
 
 ---
 
 ## Why Work With Me?
 
-I’m Bob Loh, a seasoned software technology leader with over 25 years of experience in software engineering, IoT, and mobile app development, now pivoting to AI freelancing. Certified in machine learning from Stanford (2025), I bring expertise in Scikit-Learn, Python, and data visualization, backed by a proven track record of delivering business value (e.g., saved $2.3M at Motorola through process optimization). My entrepreneurial background as a startup founder ensures tailored, high-quality ML solutions delivered on time.
+I’m **Bob Loh**, a seasoned technology leader with over 25 years of experience in software engineering, IoT, and mobile app development, now specializing in AI and machine learning. Certified in machine learning from Stanford University (2025), I combine technical expertise in Python, Scikit-Learn, and data visualization with a proven track record of delivering business value (e.g., saved $2.3M at Motorola through process optimization). As a former startup founder, I understand the importance of tailored, high-impact solutions delivered on time.
 
+My analytical approach—evidenced by in-depth model evaluations and innovative feature engineering—ensures robust, client-ready ML solutions. Whether you need predictive models for options trading, portfolio optimization, or financial analytics, I’m equipped to drive your success.
 
-
-
-
-**Ready to enhance your investment strategies with AI?** Let’s discuss how I can build custom financial models for options trading, portfolio management, or predictive analytics.
+**Ready to transform your investment strategies with AI?** Let’s collaborate to build custom ML solutions that deliver measurable results.
 
 ---
 
 ## Get Started
 
-
-To run this project locally or adapt it for your financial data:
+To explore or adapt this project for your financial data:
 
 ### Prerequisites
 - Python 3.8+
@@ -93,21 +108,10 @@ To run this project locally or adapt it for your financial data:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/brk-options-prediction.git
+   git clone https://github.com/bobloh/ML-portfolio.git
+   cd ML-portfolio/predict-brk-linear
 
-cd brk-options-prediction
-
-pip install -r requirements.txt
-
-
-
-
-- **View the Code**: [Jupyter Lab](ModelsForBRK_LinearRegression.ipynb)  
-- **Contact Me**: [Email](mailto:shiouloh@gmail.com) | [LinkedIn](https://www.linkedin.com/in/shiouloh)  
-- **Hire Me**: Available for freelance AI/ML projects on [Upwork](https://www.upwork.com/freelancers/~yourprofile) or direct contracts.
-
-Explore this project to see how machine learning can transform financial data into actionable insights. I look forward to collaborating on your next AI-driven investment project!
-
----
-
-*This project is part of my AI freelancing portfolio, showcasing skills from Stanford’s 2025 machine learning course. More projects available on my [GitHub](https://github.com/shiouloh).*
+2. ```bash
+   pip install -r requirements.txt
+3. ```bash
+   jupyter lab ModelsForBRK_LinearRegression.ipynb   
