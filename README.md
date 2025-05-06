@@ -20,7 +20,7 @@ This portfolio showcases three hands-on ML projects, demonstrating my ability to
 ## Projects
 
 
-1. **[House Price Prediction with Linear Regression](./house-price-prediction/README.md)**  
+1. **[House Price Prediction with Linear Regression](./predict-house-prices/README.md)**  
    Predicts house prices using linear regression and gradient descent, with instructive Matplotlib visualizations of cost function and optimization steps. Ideal for real estate businesses seeking data-driven pricing.  
    *Technologies*: Python, Scikit-Learn, NumPy, Matplotlib, Jupyter Notebook
 
